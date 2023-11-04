@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Save User Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+
+
+        form {
+            text-align: center;
+            width: 25%;
+            margin-top: 0px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .input-container input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #0c0f6a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003295;
+        }
+        b{
+            padding-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Save User Information</h1>
+    <form method="post" action="save_user.php">
+        <div class="input-container">
+            <b><label for="name">Name: </label></b>
+            <input type="text" name="name" placeholder="Enter name">
+        </div>
+        <div class="input-container">
+            <b><label for="email">Email: </label> </b>
+            <input type="email" name="email" placeholder="Enter email">
+        </div>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
